@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack a mole</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="wrapper">
+    <h2 class="title" id="level-type"></h2>
+    <div class="record-screen-group">
+        <h3>Would you like to record screen?</h3>
+        <button id="videoSelectBtn" class="record-screen-group__btn">
+            Choose a Video Source
+        </button>
+        <button id="startBtn" class="record-screen-group__btn" disabled>Start</button>
+        <button id="stopBtn" class="record-screen-group__btn" disabled>Stop</button>
+    </div>
+    <div class="game-wrapper">
+        <div class="result-placeholder d-none" id="result-placeholder"></div>
+        <button class="btn btn--lg" id="start-game">Start game</button>
+        <div class="matrix-placeholder d-none" id="matrix-placeholder"></div>
+    </div>
+    <a href="../level-selection/index.html">Go back</a>
+</div>
+<script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.levels {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.levels .level {
+    list-style: none;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+    transition: .4s;
+    text-transform: uppercase;
+}
+
+.levels .level:hover {
+    transform: scale(1.1);
+}
+
+.levels .level.easy {
+    background-color: var(--primary);
+}
+
+.levels .level.medium {
+    background-color: var(--warn);
+}
+
+.levels .level.hard {
+    background-color: var(--danger);
+}

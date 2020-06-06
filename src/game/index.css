@@ -1,0 +1,71 @@
+.recording {
+    border: 3px solid red;
+}
+
+.game-wrapper {
+    padding: 5px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.record-screen-group {
+    margin-bottom: 5px;
+}
+
+.record-screen-group button {
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.column.active {
+    background-color: var(--primary);
+}
+
+.column.failed {
+    background-color: var(--danger);
+}
+
+.column.success {
+    background-color: var(--success);
+}
+
+.result-placeholder {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.result-placeholder.win, .result-placeholder.loose {
+    display: block !important;
+}
+
+.result-placeholder.win {
+    color: var(--success);
+}
+
+.result-placeholder.loose {
+    color: var(--danger);
+}
+
+a {
+    margin-top: 5px;
+}
